@@ -1,0 +1,29 @@
+
+# region - ap-south-1
+
+Instal aws cli for os globally.
+
+1.Install AWS CDK globally via npm
+npm install -g aws-cdk
+
+2.configure AWS CLI to set up your credentials for deployment
+aws configure
+
+3. Create folder for project. 
+mkdir my-serverless-app
+    cd my-serverless-app
+
+4. Initialize the CDK app with language
+cdk init app --language=typescript
+
+5. AWS CDK libraries for serverless services
+npm install @aws-cdk/aws-lambda @aws-cdk/aws-apigateway @aws-cdk/aws-dynamodb @aws-cdk/aws-sqs @aws-cdk/aws-sns @aws-cdk/aws-sns-subscriptions @aws-cdk/aws-ses @aws-cdk/aws-cognito @aws-cdk/aws-iam @aws-cdk/aws-rds
+
+
+6. Define Stack on lib file.
+7.Define Lambda function on lambda folder.
+
+8. Run the command cdk synth for creating the cloud formation template via command line.
+9.cdk bootstrap ‘ for taking the version and loading a program into computer.’
+10.cdk deploy  for deployment.
+
