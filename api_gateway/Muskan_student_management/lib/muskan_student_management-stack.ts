@@ -91,9 +91,6 @@ export class MuskanStudentManagementStack extends cdk.Stack {
     students.addMethod("GET", new apigateway.LambdaIntegration(createStudentLambda));
     studentId.addMethod("DELETE", new apigateway.LambdaIntegration(createStudentLambda))
     studentId.addMethod('PUT', new apigateway.LambdaIntegration(createStudentLambda)); // For updating a student
-    
-    
-    
   }
 
 }
